@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+using namespace std;
+
+int main ()
+{
+	int t1, t2, t3, t4, totaltix;
+	float p1, p2, p3, p4, totalsales;
+	p1 = 250;
+	p2 = 100;
+	p3 = 50;
+	p4 = 25;
+	cout << "Enter no. of box tickets" << endl;
+	cin >> t1;
+	cout << "Enter no. of sideline tickets" << endl;
+	cin >> t2;
+	cout << "Enter no. of premium tickets" << endl;
+	cin >> t3;
+	cout << "Enter no. of general admission tickets" << endl;
+	cin >> t4;
+	totaltix = t1+t2+t3+t4;
+	totalsales = (p1*t1)+(p2*t2)+(p3*t3)+(p4*t4);
+	cout << "The total number of tickets is " << totaltix << endl;
+	cout << "The total sales is " << totalsales << endl;
+	_getch();
+	return 0;
+
+}
